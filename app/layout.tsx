@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { JetBrains_Mono, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Toaster } from '@/components/ui/sonner'
+import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 const _inter = Inter({ subsets: ["latin"] })
@@ -42,10 +43,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="font-sans antialiased">
-        {children}
-        <Toaster position="bottom-center" />
+        <ThemeProvider>
+          {children}
+          <Toaster position="bottom-center" />
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>

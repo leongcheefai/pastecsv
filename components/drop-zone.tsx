@@ -4,6 +4,7 @@ import { useCallback, useRef, useState } from "react"
 import { Upload, FileSpreadsheet } from "lucide-react"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
 import { SAMPLE_CSV } from "@/lib/sample-data"
 
 interface DropZoneProps {
@@ -73,6 +74,9 @@ export function DropZone({ onParse, error }: DropZoneProps) {
 
   return (
     <div className="flex min-h-[80vh] flex-col items-center justify-center px-4">
+      <div className="fixed right-4 top-4">
+        <ThemeToggle />
+      </div>
       <div className="w-full max-w-xl">
         {/* Header */}
         <div className="mb-10 text-center">

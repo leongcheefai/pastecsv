@@ -3,6 +3,7 @@
 import { Search, Link2, RotateCcw, AlertTriangle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { ThemeToggle } from "@/components/theme-toggle"
 import { toast } from "sonner"
 
 interface TableToolbarProps {
@@ -75,6 +76,7 @@ export function TableToolbar({
             <RotateCcw className="size-3.5" />
             New
           </Button>
+          <ThemeToggle />
         </div>
       </div>
     </div>
