@@ -83,7 +83,7 @@ export function DropZone({ onParse, error }: DropZoneProps) {
           <div className="mb-4 flex items-center justify-center gap-2">
             <FileSpreadsheet className="size-8 text-primary" />
             <h1 className="font-mono text-3xl font-bold tracking-tight text-foreground">
-              PasteTable
+              PasteCSV
             </h1>
           </div>
           <p className="font-mono text-sm text-muted-foreground">

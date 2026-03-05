@@ -7,7 +7,7 @@ import { DropZone } from "@/components/drop-zone"
 import { DataTable } from "@/components/data-table"
 import { TableToolbar } from "@/components/table-toolbar"
 
-export function PasteTableApp() {
+export function PasteCSVApp() {
   const { data, error, parseCSV, reset } = useCSVParser()
   const { search, setSearch, sort, toggleSort, filteredRows, totalRows } =
     useTableState(data)

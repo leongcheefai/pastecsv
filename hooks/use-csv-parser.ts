@@ -52,14 +52,14 @@ export function useCSVParser(): CSVParserResult {
 
       if (rows.length > 500) {
         setError(
-          "CSV is too large. PasteTable supports up to 500 rows."
+          "CSV is too large. PasteCSV supports up to 500 rows."
         )
         return
       }
 
       if (headers.length > 20) {
         setError(
-          "CSV is too wide. PasteTable supports up to 20 columns."
+          "CSV is too wide. PasteCSV supports up to 20 columns."
         )
         return
       }

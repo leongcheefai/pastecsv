@@ -12,7 +12,7 @@ No test framework is configured.
 
 ## Architecture
 
-PasteTable is a single-page Next.js 16 app (App Router) that lets users paste/upload CSV data and view it as a sortable, searchable, shareable table. All processing is client-side — no backend.
+PasteCSV is a single-page Next.js 16 app (App Router) that lets users paste/upload CSV data and view it as a sortable, searchable, shareable table. All processing is client-side — no backend.
 
 ### Data flow
 

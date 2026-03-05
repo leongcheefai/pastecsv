@@ -35,7 +35,7 @@ export function TableToolbar({
       <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center">
         {/* App name */}
         <h2 className="shrink-0 font-mono text-sm font-bold tracking-tight text-foreground">
-          PasteTable
+          PasteCSV
         </h2>
 
         {/* Search */}

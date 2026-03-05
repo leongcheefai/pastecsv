@@ -1,9 +1,9 @@
-import { PasteTableApp } from "@/components/paste-table-app"
+import { PasteCSVApp } from "@/components/paste-table-app"
 
 export default function Page() {
   return (
     <main>
-      <PasteTableApp />
+      <PasteCSVApp />
     </main>
   )
 }

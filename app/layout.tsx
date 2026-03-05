@@ -12,7 +12,7 @@ const _jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'PasteTable — Instant Shareable Data Tables from CSV',
+  title: 'PasteCSV — Instant Shareable Data Tables from CSV',
   description: 'Drop a CSV. Get a shareable table in seconds. No backend, no sign-up. Your data never leaves your browser.',
   icons: {
     icon: [
