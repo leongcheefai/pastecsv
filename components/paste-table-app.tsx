@@ -43,6 +43,16 @@ export function PasteCSVApp() {
         totalRows={totalRows}
         filteredCount={filteredRows.length}
       />
+      <footer className="shrink-0 border-t border-border py-2 text-center">
+        <a
+          href="https://www.praxor.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-mono text-xs text-muted-foreground transition-colors hover:text-primary"
+        >
+          Built by Praxor
+        </a>
+      </footer>
     </div>
   )
 }

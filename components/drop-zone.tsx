@@ -73,7 +73,7 @@ export function DropZone({ onParse, error }: DropZoneProps) {
   )
 
   return (
-    <div className="flex min-h-[80vh] flex-col items-center justify-center px-4">
+    <div className="flex min-h-screen flex-col items-center justify-center px-4">
       <div className="fixed right-4 top-4">
         <ThemeToggle />
       </div>
@@ -171,6 +171,16 @@ export function DropZone({ onParse, error }: DropZoneProps) {
           </div>
         )}
       </div>
+      <footer className="fixed bottom-4 left-0 right-0 text-center">
+        <a
+          href="https://www.praxor.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-mono text-xs text-muted-foreground transition-colors hover:text-primary"
+        >
+          Built by Praxor
+        </a>
+      </footer>
     </div>
   )
 }
